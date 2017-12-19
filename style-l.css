@@ -1,0 +1,448 @@
+/*### 版面設計 ###*/
+
+body {
+    background-color: #000000;
+	margin: 0px 0px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+
+
+/*## L-size bigger than 980px for Mac ##*/
+/*## M-size 640-979px for iPad ##*/
+/*## S-size smaller than 640px for iPhone ##*/
+
+
+#container {
+	width: 1080px;
+	margin: auto;
+}
+
+header {
+	padding: 5px;
+    margin: 20px;
+	margin-bottom: 0px;
+	overflow: hidden;
+}
+
+
+
+#headerpost {
+    margin-top: 0px; 
+	margin-bottom: 10px;
+	overflow: hidden;
+}
+
+.post2 {
+    margin-top: 0px; 
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+
+
+#content {
+	margin-bottom: 30px;
+	overflow: hidden;
+}
+
+
+
+footer {
+	margin-bottom: 10px
+}
+
+
+
+/*### 細部設計 ###*/
+/*### LOGO部分 ###*/
+
+#site {
+	float: left;
+}
+
+#site h1 {
+	margin: 0;
+}
+
+
+
+/*### vertical-align(對齊): bottom 對齊底部，比較好看 ###*/
+/*### container設960，三分法原則，site img 設300-360都蠻好看的 ###*/
+
+
+
+#site img {
+	vertical-align: bottom;
+	width: 150px; 
+}
+
+
+
+nav {
+	float: right;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	padding-top: 85px;
+}
+
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+nav li {
+    list-style-type: none;
+    float: left;
+}
+
+
+nav li a {
+    font-size: 20px;
+    display: block;
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    border-bottom: solid 3px transparent;
+    color: #AAAAAA;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+
+
+
+
+
+/*###標籤底下的紅槓###*/
+
+nav li a:hover {
+    border-bottom-color: #8C0044;
+}
+/*##################*/
+
+
+
+
+#headerposter img {
+    width: 960px;
+	vertical-align: top;
+    margin-left: 0px;
+}
+
+
+
+
+
+#headerposter h2 {
+    margin-left: 20px; 
+	font-size: 15px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+	padding-top: 60px;
+	color: #AAAAAA;
+	margin: 10px 0;
+}
+
+
+
+#headerposter .more {
+    color: #AAAAAA;
+    background-size: 28px;
+    background-repeat: no-repeat;
+    background-position: right center;
+    display: block;
+    padding: 10px 40px 10px 0;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* POST 圖文 */
+
+
+/* container設960，216x4+32x3=960 */
+
+.post {
+    float: left;
+    width: 192px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+}
+
+
+/* .post:last-child 以後新增的post，只要是最後一個，右邊界皆為0 */
+
+.post:last-child {
+    margin-right: 0;
+}
+
+
+/* 每四個為一組的post，右邊界皆為0 */
+
+.post+.post+.post+.post+.post{
+    margin-right: 0;
+}
+
+
+.post img {
+    width: 216px;
+    height: auto;
+    vertical-align: bottom;
+    border: none;
+}
+
+
+.post h1 {
+    margin-top: 80px;
+}
+
+
+/*##########VENUS##########*/
+
+.post h2 {
+    width: 216px;
+    color: #AAAAAA;
+    font-size: 30px;
+    margin: 30px 77px 0;
+    border-bottom-color: #8C0044;
+}
+
+.post h3 {
+    width: 216px;
+    color: #AAAAAA;
+    font-size: 20px;
+    margin: 0px 78px 0;
+    border-bottom-color: #8C0044;
+}
+
+
+
+/*##########MEDUSA##########*/
+
+
+.post h4 {
+    width: 216px;
+    color: #AAAAAA;
+    font-size: 30px;
+    margin: 30px 72px 0;
+    border-bottom-color: #8C0044;
+}
+
+.post h5 {
+    width: 216px;
+    color: #AAAAAA;
+    font-size: 20px;
+    margin: 0px 65px 0;
+    border-bottom-color: #8C0044;
+}
+
+
+
+
+/*##########APOLLO##########*/
+
+
+
+#Apollo h2 {
+    width: 216px;
+    color: #AAAAAA;
+    font-size: 30px;
+    margin: 30px 74px 0;
+    border-bottom-color: #8C0044;
+}
+
+#Apollo h3 {
+    width: 216px;
+    color: #AAAAAA;
+    font-size: 20px;
+    margin: 0px 75px 0;
+    border-bottom-color: #8C0044;
+}
+
+
+
+
+.post p {
+    color: #AAAAAA;
+    font-size: 12px;
+    margin: 30px 30px;
+}
+
+.post .data {
+    float: left;
+    margin: 0;
+}
+
+.post .more_s {
+    float: right;
+    color: #AAAAAA;
+    font-size: 14px;
+    font-family: 'Macen Pro', Helvetica, Arial, sans-serif;
+    padding: 3px 25px 3px 5px;
+    margin: 0;
+}
+
+.post a:hover {
+    background-color: #8C0044;
+}
+
+
+
+#Hera h2 {
+    width: 216px;
+    color: #AAAAAA;
+    font-size: 30px;
+    margin: 30px 85px 0;
+    border-bottom-color: #8C0044;
+}
+
+#Hera h3 {
+    width: 216px;
+    color: #AAAAAA;
+    font-size: 20px;
+    margin: 0px 72px 0;
+    border-bottom-color: #8C0044;
+}
+
+
+
+#Zeus h2 {
+    width: 216px;
+    color: #AAAAAA;
+    font-size: 30px;
+    margin: 30px 85px 0;
+    border-bottom-color: #8C0044;
+}
+
+#Zeus h3 {
+    width: 216px;
+    color: #AAAAAA;
+    font-size: 20px;
+    margin: 0px 91px 0;
+    border-bottom-color: #8C0044;
+}
+
+
+.post2 img{
+    width: 500px;
+    vertical-align: top;
+}
+
+
+
+
+
+
+
+
+/* ### FOOTER ###*/
+
+footer {
+    padding: 5px;
+}
+
+
+footer p {
+    margin-left: 3px;
+    float: left;
+    margin-top: 10px;
+    color: #AAAAAA
+}
+
+#iconmenu {
+    float: right;
+}
+
+#iconmenu ul {
+    margin: 0;
+    padding: 3px 0 0;
+}
+
+#iconmenu li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 10px 
+}
+
+#iconmenu img {
+    border: none;
+    width: 20px;
+}
+
+#submenu {
+    clear: both;
+    font-family: 'Maven Pro', Helvetica, Arial, san-serif;
+    font-size: 12px;
+    overflow: hidden;
+}
+
+#submenu ul {
+    margin: 3px;
+    padding: 0;
+}
+
+#submenu li {
+    list-style-type: none;
+    float: left;
+}
+
+#submenu li a {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    display: block;
+    width: auto;
+    border-right: solid 1px #AAAAAA;
+    text-align: center;
+    text-decoration: none;
+    color: #AAAAAA;
+    font-weight: bold;
+    padding-right: 6px;
+    margin-right: 3px;
+}
+
+#submenu li:last-child a {
+    border: none;
+}
+
+#submenu li+li+li a {
+    border: none;
+}
+
+small {
+    display: block;
+    width: auto;
+    border-right: solid 1px #AAAAAA;
+    text-decoration: none;
+    color: #AAAAAA;
+    font-weight: bold;
+    padding-right: 6px;
+    margin-right: 3px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+
+small {
+    font-size: 12px;
+    font-weight: bold;
+    display: block;
+    color: #AAAAAA;
+    margin-top: 10px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+
+small {
+	margin-left: 3px;
+    clear: both;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 12px;
+    overflow: hidden;
+}
